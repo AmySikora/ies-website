@@ -4,21 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Impact Education Systems</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/ies-no-footer.png" />
   <meta name="description" content="Impact Education Systems partners with higher education and K-12 institutions to build equitable, efficient, student-centered systems.">
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body id="top">
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="#top" class="logo"></a>
-      <img src="img/ies-no-footer.png" class="logo" alt="Impact education Systems logo">
-      <button class="nav-toggle" aria-label="Toggle navigation">
+      <a href="#top" class="brand">
+        <img src="img/ies-no-footer.png" class="brand-logo" alt="Impact Education Systems logo">
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         ☰
       </button>
+
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#tag-programs">TAG & K-12</a>
+        <a href="#tag-programs">TAG &amp; K-12</a>
         <a href="#approach">Our Approach</a>
         <a href="#institutions">Institutions</a>
         <a href="#families">Families</a>
@@ -27,31 +32,33 @@
     </div>
   </header>
 
-  <main id="top">
+  <main>
     <!-- Hero -->
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <h1>Empowering every learner through equity-driven solutions.</h1>
+          <h1>Empowering every learner through equity-driven systems.</h1>
           <p>
-            Impact Education Systems partners with higher education and K-12 leaders
-            to design inclusive policies, streamline systems, and build programs where
-            every student can thrive.
-          </p>
+            Impact Education Systems partners with higher education, K-12 leaders,
+            and families to design inclusive systems, untangle red tape, and make sure
+            every learner is seen and supported.
+          </p>          
           <div class="hero-cta">
             <a href="#contact" class="btn primary">Schedule a conversation</a>
+            <a href="#families" class="btn ghost">Support for families</a>
             <a href="#services" class="btn ghost">Explore services</a>
           </div>
         </div>
-        <div class="hero-card" aria-label="At-a-glance impact">
+
+        <aside class="hero-card" aria-label="At-a-glance impact">
           <h2>What we help you achieve</h2>
           <ul>
             <li>More equitable access and outcomes</li>
-            <li>Smoother pathways from inquiry to graduation</li>
-            <li>Efficient systems that support—not block—students</li>
+            <li>Clearer pathways from inquiry to graduation</li>
+            <li>Systems that support students instead of blocking them</li>
             <li>Stronger TAG and advanced learning opportunities</li>
           </ul>
-        </div>
+        </aside>
       </div>
     </section>
 
@@ -71,15 +78,15 @@
             and designing solutions your teams can actually use.
           </p>
         </div>
-        <div class="callout">
+        <aside class="callout">
           <h3>Who we work with</h3>
           <ul>
-            <li>Universities & colleges</li>
+            <li>Universities &amp; colleges</li>
             <li>Community colleges</li>
-            <li>K-12 districts & TAG programs</li>
-            <li>State systems & education agencies</li>
+            <li>K-12 districts &amp; TAG programs</li>
+            <li>State systems &amp; education agencies</li>
           </ul>
-        </div>
+        </aside>
       </div>
     </section>
 
@@ -89,19 +96,19 @@
         <h2>Core Services</h2>
         <div class="grid">
           <article class="card">
-            <h3>Equity & Student Success Strategy</h3>
+            <h3>Equity &amp; Student Success Strategy</h3>
             <p>Review policies, practices, and data to close gaps and support all learners.</p>
           </article>
           <article class="card">
-            <h3>Process & Systems Optimization</h3>
+            <h3>Process &amp; Systems Optimization</h3>
             <p>Streamline admissions, registration, records, and advising for clarity and ease.</p>
           </article>
           <article class="card">
-            <h3>Leadership & Staff Development</h3>
-            <p>Training and workshops that build capacity, accountability, and shared vision.</p>
+            <h3>Leadership &amp; Staff Development</h3>
+            <p>Workshops and coaching that build capacity, alignment, and shared vision.</p>
           </article>
           <article class="card">
-            <h3>Virtual & Technology-Enhanced Learning</h3>
+            <h3>Virtual &amp; Tech-Enabled Learning</h3>
             <p>Align platforms, accessibility, and support for sustainable online learning.</p>
           </article>
         </div>
@@ -112,23 +119,23 @@
     <section id="tag-programs" class="section">
       <div class="container two-col">
         <div>
-          <h2>TAG & Advanced Learning Programs</h2>
+          <h2>TAG &amp; Advanced Learning Programs</h2>
           <p>
-            We help districts design and refine Talented and Gifted programs that are
-            equitable, data-informed, and accessible to diverse learners.
+            We help districts design and refine Talented and Gifted and advanced learning programs
+            that are equitable, data-informed, and accessible to diverse learners.
           </p>
           <ul>
             <li>Program design and audits</li>
             <li>Identification frameworks with equity safeguards</li>
-            <li>Professional development for educators</li>
+            <li>Professional learning for teachers and coordinators</li>
           </ul>
         </div>
-        <div class="callout">
+        <aside class="callout">
           <p>
-            TAG shouldn’t only serve the students with the loudest advocates.
-            We help you build pathways that find and support hidden talent.
+            TAG should not only serve students with the most resourced advocates.
+            We help you find and support the talent that systems often overlook.
           </p>
-        </div>
+        </aside>
       </div>
     </section>
 
@@ -139,11 +146,11 @@
         <div class="steps">
           <div class="step">
             <h3>1. Listen</h3>
-            <p>We start with your context, culture, and constraints.</p>
+            <p>We start with your culture, data, and daily realities.</p>
           </div>
           <div class="step">
             <h3>2. Map</h3>
-            <p>We visualize current processes and pinpoint barriers.</p>
+            <p>We visualize current processes and pinpoint barriers for students and staff.</p>
           </div>
           <div class="step">
             <h3>3. Design</h3>
@@ -151,64 +158,105 @@
           </div>
           <div class="step">
             <h3>4. Support</h3>
-            <p>We provide tools, training, and coaching to sustain change.</p>
+            <p>We provide tools, training, and coaching so changes stick.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Institutions -->
+    <section id="institutions" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Support for Institutions</h2>
+          <p>
+            Institutions partner with Impact Education Systems when they need a calm, experienced team
+            to navigate complexity—without losing sight of students.
+          </p>
+          <ul>
+            <li>End-to-end reviews of admissions, records, and advising workflows</li>
+            <li>Policy alignment with accreditation, compliance, and equity goals</li>
+            <li>Implementation support for SIS, CRM, and document management tools</li>
+            <li>Facilitated strategy sessions with cross-functional stakeholders</li>
+          </ul>
+        </div>
+        <aside class="callout">
+          <p>
+            You bring your vision. We bring structure, facilitation, and operational depth so your teams
+            can move from ideas to measurable outcomes.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Families -->
     <section id="families" class="section alt">
         <div class="container two-col">
           <div>
-            <h2>Support for Families & Students</h2>
+            <h2>Support for Families &amp; Students</h2>
             <p>
-              We help families navigate the complexities of modern education — from understanding assessments to advocating for equitable support. Whether you’re exploring gifted options, special education services, or simply need help understanding where your child stands, we provide clear, actionable guidance.
+              If you’re feeling lost in testing results, services, or school language,
+              we provide calm, practical guidance. Our individualized support helps you
+              understand your child’s needs, options, and rights so you can advocate
+              with confidence.
             </p>
             <ul>
-              <li>Comprehensive educational assessments and reports</li>
-              <li>IEP and 504 plan navigation</li>
-              <li>Parent advocacy coaching and representation</li>
-              <li>College and career readiness planning</li>
+              <li>Review of school records, assessments, and progress data</li>
+              <li>Readable written summaries and recommendation reports</li>
+              <li>Preparation and strategy for IEP, 504, TAG, and placement meetings</li>
+              <li>Coaching on communication with schools and next-step planning</li>
+              <li>College and career readiness planning for complex pathways</li>
             </ul>
             <a href="#contact" class="btn primary">Schedule a family consultation</a>
           </div>
-          <div class="callout">
+          <aside class="callout">
             <p>
-              Every student deserves to be seen, supported, and challenged appropriately. Our goal is to make sure your child’s educational journey reflects their full potential.
+              We do not replace your child’s school team. We help you understand the system,
+              clarify options, and show up prepared so the meetings, plans, and services
+              better match your child.
             </p>
-          </div>
+          </aside>
         </div>
       </section>
       
-
     <!-- Contact -->
     <section id="contact" class="section">
       <div class="container two-col">
         <div>
           <h2>Let’s Talk</h2>
           <p>
-            Share a bit about your institution’s goals, challenges, and timelines.
+            Share a bit about your goals, context, and timelines.
             We’ll follow up with a tailored proposal or a no-pressure discovery call.
           </p>
         </div>
         <form class="contact-form">
-          <label>
-            Name
-            <input type="text" name="name" required />
-          </label>
-          <label>
-            Institution
-            <input type="text" name="institution" required />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" required />
-          </label>
-          <label>
-            How can we help?
-            <textarea name="message" rows="4" required></textarea>
-          </label>
-          <button type="submit" class="btn primary">Submit Inquiry</button>
-        </form>
+            <label>
+              I’m reaching out as a:
+              <select name="audience" required>
+                <option value="">Select one</option>
+                <option value="institution">Institution / District / Program</option>
+                <option value="family">Family / Student</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Institution / School (if applicable)
+              <input type="text" name="institution" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              How can we help?
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button type="submit" class="btn primary">Submit Inquiry</button>
+          </form>          
       </div>
     </section>
   </main>
