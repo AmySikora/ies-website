@@ -1,18 +1,69 @@
 :root {
-    --bg: #050816;
-    --bg-alt: #0b1020;
-    --panel: #111827;
-    --accent: #22c55e;
-    --accent-soft: rgba(34, 197, 94, 0.15);
-    --text: #e5e7eb;
-    --muted: #9ca3af;
+    --bg: #0c1630;
+    --bg-alt: #122043;
+    --panel: #16294f;
+    --accent: #40e0a1;         /* mint green */
+    --accent-2: #ff9e57;       /* orange highlight */
+    --text: #f3f6ff;
+    --muted: #cbd5e1;
     --radius: 16px;
-    --shadow: 0 16px 40px rgba(15, 23, 42, 0.5);
+    --shadow: 0 16px 40px rgba(12, 18, 32, 0.55);
     --transition: 0.25s ease;
     --max-width: 1120px;
-    --font-main: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-      -system-ui, sans-serif;
+    --font-main: system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, sans-serif;
   }
+  
+  /* body background */
+  body {
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--text);
+    background:
+      linear-gradient(160deg, #08215e 0%, #10264f 40%, #0d1333 100%);
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* Buttons and hover accents */
+  .btn.primary {
+    background: var(--accent);
+    color: #062019;
+    font-weight: 600;
+  }
+  .btn.primary:hover {
+    box-shadow: 0 12px 24px rgba(64, 224, 161, 0.4);
+  }
+  
+  .btn.ghost {
+    border-color: var(--accent-2);
+    color: var(--accent-2);
+  }
+  .btn.ghost:hover {
+    background: rgba(255, 158, 87, 0.15);
+    border-color: var(--accent-2);
+    color: var(--accent-2);
+  }
+  
+  /* Card / panel tweaks */
+  .card,
+  .hero-card,
+  .callout,
+  .contact-form {
+    background: var(--panel);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: var(--shadow);
+  }
+  
+  .card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+  }
+  
+  /* Headings pop slightly warmer */
+  h1, h2, h3 {
+    color: #fdfdfd;
+  }
+  
   
   *,
   *::before,
@@ -58,6 +109,7 @@
     font-weight: 600;
     letter-spacing: 0.03em;
     text-decoration: none;
+    align-items: left;
     color: var(--text);
   }
   
@@ -360,5 +412,27 @@
     .steps {
       grid-template-columns: 1fr;
     }
+  }
+  
+  /* give the whole page comfortable side margins */
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--text);
+    background:
+      radial-gradient(circle at top left, rgba(37, 99, 235, 0.24), transparent 70%),
+      radial-gradient(circle at top right, rgba(255, 158, 87, 0.16), transparent 70%),
+      var(--bg);
+    -webkit-font-smoothing: antialiased;
+    padding: 0 2.5rem;          /* 👈 this adds the page-wide side padding */
+  }
+  
+  /* keep full-bleed header/footer backgrounds */
+  .site-header,
+  .site-footer {
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
   
