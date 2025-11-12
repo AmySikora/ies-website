@@ -1,6 +1,6 @@
 :root {
-    --bg: #0c1630;
-    --bg-alt: #122043;
+    --bg: #151a7b;
+    --bg-alt: #6888d9;
     --panel: #16294f;
     --accent: #40e0a1;         /* mint green */
     --accent-2: #ff9e57;       /* orange highlight */
@@ -193,6 +193,67 @@
   .hero-card li {
     margin-bottom: 0.4rem;
   }
+  /* Responsive */
+  
+  @media (max-width: 900px) {
+    .hero-inner,
+    .two-col {
+      grid-template-columns: 1fr;
+    }
+  
+    .grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    .steps {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .nav-links {
+      position: absolute;
+      inset: 56px 1.5rem auto;
+      padding: 0.75rem 0.9rem;
+      background: #020817;
+      border-radius: 12px;
+      border: 1px solid rgba(148, 163, 253, 0.18);
+      box-shadow: var(--shadow);
+      flex-direction: column;
+      gap: 0.5rem;
+      display: none;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-toggle {
+      display: inline-flex;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .steps {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* give the whole page comfortable side margins */
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--text);
+    background:
+      radial-gradient(circle at top left, rgba(37, 99, 235, 0.24), transparent 70%),
+      radial-gradient(circle at top right, rgba(255, 158, 87, 0.16), transparent 70%),
+      var(--bg);
+    -webkit-font-smoothing: antialiased;
+    padding: 0 2.5rem;          /* 👈 this adds the page-wide side padding */
+  }
+  
   
   /* Sections */
   
@@ -364,67 +425,6 @@
     justify-content: center;
     color: var(--muted);
     font-size: 0.78rem;
-  }
-  
-  /* Responsive */
-  
-  @media (max-width: 900px) {
-    .hero-inner,
-    .two-col {
-      grid-template-columns: 1fr;
-    }
-  
-    .grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  
-    .steps {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  
-  @media (max-width: 640px) {
-    .nav-links {
-      position: absolute;
-      inset: 56px 1.5rem auto;
-      padding: 0.75rem 0.9rem;
-      background: #020817;
-      border-radius: 12px;
-      border: 1px solid rgba(148, 163, 253, 0.18);
-      box-shadow: var(--shadow);
-      flex-direction: column;
-      gap: 0.5rem;
-      display: none;
-    }
-  
-    .nav-links.open {
-      display: flex;
-    }
-  
-    .nav-toggle {
-      display: inline-flex;
-    }
-  
-    .grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .steps {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  /* give the whole page comfortable side margins */
-body {
-    margin: 0;
-    font-family: var(--font-main);
-    color: var(--text);
-    background:
-      radial-gradient(circle at top left, rgba(37, 99, 235, 0.24), transparent 70%),
-      radial-gradient(circle at top right, rgba(255, 158, 87, 0.16), transparent 70%),
-      var(--bg);
-    -webkit-font-smoothing: antialiased;
-    padding: 0 2.5rem;          /* 👈 this adds the page-wide side padding */
   }
   
   /* keep full-bleed header/footer backgrounds */
